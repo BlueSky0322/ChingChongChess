@@ -3,5 +3,6 @@ public class King extends ChessPiece {
         this.isDead = isDead;
         this.position = position;
         this.player = player;
+        //calvin here
     }
 }
