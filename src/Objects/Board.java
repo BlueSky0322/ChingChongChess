@@ -11,7 +11,7 @@ public class Board {
                 grid[i][j] = new Grid();
             }
         }
-
+        //you are guiey
         grid[0][0].insertPiece(new Rook(1,Colour.RED));
         grid[1][0].insertPiece(new Knight(1,Colour.RED));
         grid[2][0].insertPiece(new Minister(1,Colour.RED));
