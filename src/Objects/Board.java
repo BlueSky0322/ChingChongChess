@@ -53,6 +53,7 @@ public class Board {
             for (int i = 0; i<9; i++){
                 grid[i][j].printGrid();
             }
+            System.out.println();
         }
     }
 }
