@@ -29,6 +29,23 @@ public class Board {
         grid[6][3].insertPiece(new Pawn(1,Colour.RED));
         grid[8][3].insertPiece(new Pawn(1,Colour.RED));
 
+        grid[0][9].insertPiece(new Rook(2,Colour.BLACK));
+        grid[1][9].insertPiece(new Knight(2,Colour.BLACK));
+        grid[2][9].insertPiece(new Minister(2,Colour.BLACK));
+        grid[3][9].insertPiece(new Advisor(2,Colour.BLACK));
+        grid[4][9].insertPiece(new King(2,Colour.BLACK));
+        grid[5][9].insertPiece(new Advisor(2,Colour.BLACK));
+        grid[6][9].insertPiece(new Minister(2,Colour.BLACK));
+        grid[7][9].insertPiece(new Knight(2,Colour.BLACK));
+        grid[8][9].insertPiece(new Rook(2,Colour.BLACK));
+        grid[1][7].insertPiece(new Cannon(2,Colour.BLACK));
+        grid[7][7].insertPiece(new Cannon(2,Colour.BLACK));
+        grid[0][6].insertPiece(new Pawn(2,Colour.BLACK));
+        grid[2][6].insertPiece(new Pawn(2,Colour.BLACK));
+        grid[4][6].insertPiece(new Pawn(2,Colour.BLACK));
+        grid[6][6].insertPiece(new Pawn(2,Colour.BLACK));
+        grid[8][6].insertPiece(new Pawn(2,Colour.BLACK));
+    
     }
 
     public void printBoard(){
