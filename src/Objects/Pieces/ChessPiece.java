@@ -7,6 +7,8 @@ public abstract class ChessPiece {
     int player;
     Colour c;
     //private availableMoves;
-    public void showAvailableMoves(){};
+    public void showAvailableMoves(){
+        System.out.print("Hello");
+    };
     public void moveTo(int position[]){};
 }
