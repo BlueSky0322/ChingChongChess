@@ -1,6 +1,6 @@
 package Objects;
 
-import Objects.Pieces.ChessPiece;
+import Objects.Pieces.*;
 
 public class Grid {
     private boolean isOccupied;
@@ -20,8 +20,31 @@ public class Grid {
 
     public void printGrid(){
         if(isOccupied){
-            System.out.println(c);
+            if (this.c instanceof Rook){
+                System.out.print("车");
+            }
+            else if (this.c instanceof Knight){
+                System.out.print("马");
+            }
+            else if (this.c instanceof Minister){
+                System.out.print("相");
+            }
+            else if (this.c instanceof Advisor){
+                System.out.print("士");
+            }
+            else if (this.c instanceof King){
+                System.out.print("将");
+            }
+            else if (this.c instanceof Pawn){
+                System.out.print("卒");
+            }
+            else if (this.c instanceof Cannon){
+                System.out.print("炮");
+            }
         }
-        else System.out.println("Nothing here");
+        else System.out.print("X");
+        System.out.print(" | ");
     }
+
+
 }

@@ -11,7 +11,7 @@ public class Board {
                 grid[i][j] = new Grid();
             }
         }
-
+        //you are guiey
         grid[0][0].insertPiece(new Rook(1,Colour.RED));
         grid[1][0].insertPiece(new Knight(1,Colour.RED));
         grid[2][0].insertPiece(new Minister(1,Colour.RED));
@@ -53,6 +53,7 @@ public class Board {
             for (int i = 0; i<9; i++){
                 grid[i][j].printGrid();
             }
+            System.out.println();
         }
     }
 }
