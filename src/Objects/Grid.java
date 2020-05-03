@@ -4,7 +4,7 @@ import Objects.Pieces.*;
 
 public class Grid {
     private boolean isOccupied;
-    private ChessPiece c;
+    public ChessPiece c;
     public Grid(){
         this.isOccupied = false;
     }
@@ -16,6 +16,11 @@ public class Grid {
     public void insertPiece(ChessPiece c){
         this.c = c;
         this.isOccupied = true;
+    }
+
+    public void removePiece(){
+        this.c = null;
+        this.isOccupied = false;
     }
 
     public void printGrid(){
