@@ -74,7 +74,7 @@ public class Board {
         if (!grid[x][y].CheckOccupied()) {
             return null;
         } else {
-            return checkObstacle(checkMovable(grid[x][y].c.getMovable(x, y)), x, y);
+            return checkBounds(checkObstacle(checkMovable(grid[x][y].c.getMovable(x, y)), x, y));
         }
 
         //return list;
@@ -118,9 +118,7 @@ public class Board {
                 }
             }
         }
-        for (int arr[] : list) {
-            System.out.println(Arrays.toString(arr));
-        }
+
         return list;
     }
 
@@ -133,6 +131,26 @@ public class Board {
      */
     //TODO: Ryan
     public List<int[]> checkBounds(List<int[]> list) {
+        int [][] barr = {{4,0},{4,1},{4,2},{3,0},{3,1},{3,2},{5,0},{5,1},{5,2}};
+        int count = 0;
+        boolean flag;
+        for (count = 0; count < list.size(); count++){
+            int lar[] = list.get(count);
+            flag = false;
+            for (int bar[] : barr){
+                if (Arrays.equals(lar,bar)){
+                    flag = true;
+                    break;
+                }
+            }
+            if (flag==false){
+                list.remove(count);
+                count--;
+            }
+        }
+        for(int[] arr1 : list) {
+            System.out.println(Arrays.toString(arr1));
+        }
         return list;
     }
 }
