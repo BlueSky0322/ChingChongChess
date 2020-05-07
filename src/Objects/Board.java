@@ -129,7 +129,6 @@ public class Board {
      *             The function checks whether the move is out of bounds for the king or advisor
      * @return  A list of all the final legal moves for the selected piece.
      */
-    //TODO: Ryan
     public List<int[]> checkBounds(List<int[]> list) {
         int [][] barr = {{4,0},{4,1},{4,2},{3,0},{3,1},{3,2},{5,0},{5,1},{5,2}};
         int count = 0;
